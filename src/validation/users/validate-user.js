@@ -1,7 +1,7 @@
 const Joi = require("joi");
 const response = require("../../services/response/response");
 
-exports.validateClient = (req, res, next) => {
+exports.validateUSer = (req, res, next) => {
   const { fullname, username, email, password } = req.body;
 
   const userScheme = Joi.object().keys({
@@ -11,7 +11,12 @@ exports.validateClient = (req, res, next) => {
     password: Joi.string().required(),
   });
 
-  const toValidate = { fullname, username, email, password };
+  const toValidate = {
+    fullname,
+    username,
+    email,
+    password,
+  };
 
   const result = userScheme.validate(toValidate);
 

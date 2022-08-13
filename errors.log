@@ -1,157 +1,17 @@
-[2021-06-13T04:27:53.729] [ERROR] errors - TypeError: res.status is not a function
-    at Object.successResponse (C:\Users\user\Desktop\Projects\Prectice Project\backend\services\response\response.js:9:8)
-    at exports.registerUser (C:\Users\user\Desktop\Projects\Prectice Project\backend\controllers\admin.js:11:21)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-    at Function.handle (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:174:3)
-    at router (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:317:13)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-[2021-06-13T04:28:32.538] [ERROR] errors - TypeError: response.successResponse is not a function
-    at exports.registerUser (C:\Users\user\Desktop\Projects\Prectice Project\backend\controllers\admin.js:11:21)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-    at Function.handle (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:174:3)
-    at router (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:317:13)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-    at urlencodedParser (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\body-parser\lib\types\urlencoded.js:82:7)
-[2021-06-13T04:30:41.232] [ERROR] errors - TypeError: response.successResponse is not a function
-    at exports.registerUser (C:\Users\user\Desktop\Projects\Prectice Project\backend\controllers\admin.js:11:21)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-    at Function.handle (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:174:3)
-    at router (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:317:13)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-    at urlencodedParser (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\body-parser\lib\types\urlencoded.js:82:7)
-[2021-06-13T04:33:01.312] [ERROR] errors - TypeError: res.status is not a function
-    at Object.succesResponse (C:\Users\user\Desktop\Projects\Prectice Project\backend\services\response\response.js:12:8)
-    at exports.registerUser (C:\Users\user\Desktop\Projects\Prectice Project\backend\controllers\admin.js:11:21)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-    at Function.handle (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:174:3)
-    at router (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:317:13)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-[2021-06-13T04:33:03.742] [ERROR] errors - TypeError: res.status is not a function
-    at Object.succesResponse (C:\Users\user\Desktop\Projects\Prectice Project\backend\services\response\response.js:12:8)
-    at exports.registerUser (C:\Users\user\Desktop\Projects\Prectice Project\backend\controllers\admin.js:11:21)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-    at Function.handle (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:174:3)
-    at router (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:317:13)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\express\lib\router\index.js:275:10)
-[2021-08-08T01:45:41.782] [ERROR] errors - MongooseError: Operation `postmessages.find()` buffering timed out after 10000ms
-    at Timeout.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:20)
-    at listOnTimeout (internal/timers.js:557:17)
-    at processTimers (internal/timers.js:500:7)
-[2021-08-08T02:06:21.670] [ERROR] errors - MongooseError: Operation `postmessages.find()` buffering timed out after 10000ms
-    at Timeout.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:20)
-    at listOnTimeout (internal/timers.js:557:17)
-    at processTimers (internal/timers.js:500:7)
-[2021-08-08T02:13:42.628] [ERROR] errors - MongooseError: Operation `postmessages.find()` buffering timed out after 10000ms
-    at Timeout.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:20)
-    at listOnTimeout (internal/timers.js:557:17)
-    at processTimers (internal/timers.js:500:7)
-[2021-08-08T02:23:06.730] [ERROR] errors - MongooseError: Operation `postmessages.find()` buffering timed out after 10000ms
-    at Timeout.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:20)
-    at listOnTimeout (internal/timers.js:557:17)
-    at processTimers (internal/timers.js:500:7)
-[2021-08-08T02:29:05.788] [ERROR] errors - MongooseError: Cannot call `postmessages.find()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
-    at NativeCollection.<computed> [as find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:215:15)
-    at NodeCollection.find (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mquery\lib\collection\node.js:26:19)
-    at model.Query.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\query.js:1927:20)
-    at model.Query._wrappedThunk [as _find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\kareem\index.js:370:33
-    at processTicksAndRejections (internal/process/task_queues.js:77:11)
-[2021-08-08T02:29:07.224] [ERROR] errors - MongooseError: Cannot call `postmessages.find()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
-    at NativeCollection.<computed> [as find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:215:15)
-    at NodeCollection.find (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mquery\lib\collection\node.js:26:19)
-    at model.Query.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\query.js:1927:20)
-    at model.Query._wrappedThunk [as _find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\kareem\index.js:370:33
-    at processTicksAndRejections (internal/process/task_queues.js:77:11)
-[2021-08-08T02:29:08.210] [ERROR] errors - MongooseError: Cannot call `postmessages.find()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
-    at NativeCollection.<computed> [as find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:215:15)
-    at NodeCollection.find (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mquery\lib\collection\node.js:26:19)
-    at model.Query.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\query.js:1927:20)
-    at model.Query._wrappedThunk [as _find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\kareem\index.js:370:33
-    at processTicksAndRejections (internal/process/task_queues.js:77:11)
-[2021-08-08T02:29:08.937] [ERROR] errors - MongooseError: Cannot call `postmessages.find()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
-    at NativeCollection.<computed> [as find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:215:15)
-    at NodeCollection.find (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mquery\lib\collection\node.js:26:19)
-    at model.Query.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\query.js:1927:20)
-    at model.Query._wrappedThunk [as _find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\kareem\index.js:370:33
-    at processTicksAndRejections (internal/process/task_queues.js:77:11)
-[2021-08-08T02:29:21.511] [ERROR] errors - MongooseError: Cannot call `postmessages.find()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
-    at NativeCollection.<computed> [as find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:215:15)
-    at NodeCollection.find (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mquery\lib\collection\node.js:26:19)
-    at model.Query.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\query.js:1927:20)
-    at model.Query._wrappedThunk [as _find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\kareem\index.js:370:33
-    at processTicksAndRejections (internal/process/task_queues.js:77:11)
-[2021-08-08T02:29:22.670] [ERROR] errors - MongooseError: Cannot call `postmessages.find()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
-    at NativeCollection.<computed> [as find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:215:15)
-    at NodeCollection.find (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mquery\lib\collection\node.js:26:19)
-    at model.Query.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\query.js:1927:20)
-    at model.Query._wrappedThunk [as _find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\kareem\index.js:370:33
-    at processTicksAndRejections (internal/process/task_queues.js:77:11)
-[2021-08-08T02:30:21.956] [ERROR] errors - MongooseError: Cannot call `postmessages.find()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.
-    at NativeCollection.<computed> [as find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:215:15)
-    at NodeCollection.find (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mquery\lib\collection\node.js:26:19)
-    at model.Query.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\query.js:1927:20)
-    at model.Query._wrappedThunk [as _find] (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
-    at C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\kareem\index.js:370:33
-    at processTicksAndRejections (internal/process/task_queues.js:77:11)
-[2021-08-08T02:30:42.611] [ERROR] errors - MongooseError: Operation `postmessages.find()` buffering timed out after 10000ms
-    at Timeout.<anonymous> (C:\Users\user\Desktop\Projects\Prectice Project\backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:20)
-    at listOnTimeout (internal/timers.js:557:17)
-    at processTimers (internal/timers.js:500:7)
-[2021-12-20T00:44:36.109] [ERROR] errors - ReferenceError: _id is not defined
-    at exports.deleteUser (C:\Users\user\Desktop\Projects\react-redux\backend\controllers\user\user-controller.js:49:56)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[2022-06-29T00:50:59.586] [ERROR] errors - TypeError: users.map is not a function
+    at exports.getUsers (C:\Users\user\Desktop\Learning\backend\src\controllers\users\user-controller.js:15:28)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:323:13)
+    at C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:341:12)
+    at next (C:\Users\user\Desktop\Learning\backend\node_modules\express\lib\router\index.js:275:10)
+    at cors (C:\Users\user\Desktop\Learning\backend\node_modules\cors\lib\index.js:188:7)

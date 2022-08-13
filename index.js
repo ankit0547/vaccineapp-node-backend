@@ -1,25 +1,33 @@
 const express = require("express");
-const app = express();
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const connectDB = require("./modals/index");
+const connectDB = require("./config/dbConfig");
+const options = require("./src/swagger/options");
+const swaggerUi = require("swagger-ui-express");
 
 dotenv.config();
+
 connectDB.connectdb();
 
-//Routes
-const clientsRoute = require("./routes/clients-route");
-// const authRoute = require("./routes/auth-route");
+const app = express();
+
+app.use(
+  "/api-docs",
+  swaggerUi.serve,
+  swaggerUi.setup(options, { explorer: true })
+);
 
 // parse application/json
 app.use(bodyParser.json());
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
-//Routes middleware
-// app.use("/auth/sign-up", authRoute);
-app.use("/dashboard", clientsRoute);
+//Routes
+const { userRoute } = require("./src/routes/index");
+
+app.use("/users", userRoute);
 
 app.listen(4000, () => console.log("server is running at 4000 port!!"));

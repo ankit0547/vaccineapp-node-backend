@@ -1,6 +1,3 @@
-// import all modals
-// const signupModal = require("./signupModal");
-
 // db connection
 exports.connectdb = async () => {
   const mongoose = require("mongoose");
@@ -11,7 +8,7 @@ exports.connectdb = async () => {
 
   mongoose.connect(
     `${URL}/${dbName}`,
-    { useNewUrlParser: true, useUnifiedTopology: true },
+    { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
     (error) => {
       if (!error) {
         console.log("Database Connected successfully to server");
@@ -20,24 +17,6 @@ exports.connectdb = async () => {
       }
     }
   );
-  // exports.connectdb = async () => {
-  //   const mongoose = require("mongoose");
-  //   const URL = process.env.DB_BASE_URL;
-
-  //   // Database Name
-  //   const dbName = process.env.DB_NAME;
-
-  //   mongoose.connect(
-  //     `${URL}/${dbName}`,
-  //     { useNewUrlParser: true, useUnifiedTopology: true },
-  //     (error) => {
-  //       if (!error) {
-  //         console.log("Database Connected successfully to server");
-  //       } else {
-  //         console.log("Database not Connected to server");
-  //       }
-  //     }
-  //   );
 
   // const MongoClient = require("mongodb").MongoClient;
 
@@ -60,7 +39,3 @@ exports.connectdb = async () => {
   //   }
   // );
 };
-
-// const db = process.env.db
-// const username = process.env.DB_USERNAME
-// const password = process.env.DB_PASSWORD
