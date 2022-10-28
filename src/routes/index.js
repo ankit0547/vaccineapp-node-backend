@@ -1,3 +1,5 @@
-const userRoute = require("./user-route");
+import studentRoute from "./student.js";
+import vaccineRoute from "./vaccineDrive.js";
+import landingDetailsRoute from "./landingDetails.js";
 
-module.exports = { userRoute };
+export { studentRoute, vaccineRoute, landingDetailsRoute };

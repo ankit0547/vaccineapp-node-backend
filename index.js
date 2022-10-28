@@ -1,15 +1,26 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const connectDB = require("./config/dbConfig");
-const options = require("./src/swagger/options");
-const swaggerUi = require("swagger-ui-express");
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
+import connectdb from "./src/config/dbConfig.js";
+import options from "./src/swagger/options.js";
+import swaggerUi from "swagger-ui-express";
+import {
+  studentRoute,
+  landingDetailsRoute,
+  vaccineRoute,
+} from "./src/routes/index.js";
+import dotenv from "dotenv";
 
 dotenv.config();
 
-connectDB.connectdb();
+console.log(process.env.PORT);
 
+const PORT = process.env.PORT || 5000;
+
+//Connect to Database
+connectdb();
+
+//Setup App
 const app = express();
 
 app.use(
@@ -26,8 +37,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 //Routes
-const { userRoute } = require("./src/routes/index");
+app.use("/api/v1/student/", studentRoute);
+app.use("/api/v1/vaccineDrive/", vaccineRoute);
+app.use("/api/v1/landing/", landingDetailsRoute);
 
-app.use("/users", userRoute);
-
-app.listen(4000, () => console.log("server is running at 4000 port!!"));
+app.listen(PORT, () => console.log(`server is running at ${PORT} port!!`));

@@ -8,21 +8,21 @@ const options = {
   consumes: ["application/json"],
   produce: ["application/json"],
   paths: {
-    "/users": {
+    "/api/v1/student": {
       get: {
-        summary: "service to get all users",
-        tags: ["User"],
+        summary: "service to get all Students",
+        tags: ["Students"],
         responses: {
           200: {
-            description: "ok",
+            description: "Success",
           },
         },
       },
     },
-    "/users/register": {
+    "/api/v1/student/": {
       post: {
-        summary: "service to register a user",
-        tags: ["User"],
+        summary: "service to register a Student",
+        tags: ["Students"],
         parameters: [
           {
             name: "body",
@@ -32,19 +32,19 @@ const options = {
             schema: {
               type: "object",
               properties: {
-                fullname: {
+                date: {
                   type: "string",
-                  example: "John",
+                  example: "2022-10-27T12:00:00Z",
                 },
-                username: {
+                studentName: {
                   type: "string",
-                  example: "abc1122",
+                  example: "Ankit",
                 },
-                email: {
-                  type: "string",
-                  example: "jhonsmith@example.com",
+                vaccineStatus: {
+                  type: "boolean",
+                  example: true,
                 },
-                password: {
+                vaccineName: {
                   type: "string",
                   example: "Example@1234",
                 },
@@ -62,4 +62,4 @@ const options = {
   },
 };
 
-module.exports = options;
+export default options;

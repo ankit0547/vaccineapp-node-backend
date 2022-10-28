@@ -1,0 +1,23 @@
+import mongoose from "mongoose";
+
+const studentSchema = mongoose.Schema({
+  date: {
+    type: Date,
+    default: Date.now(),
+  },
+  studentName: {
+    type: String,
+    required: true,
+  },
+  vaccineStatus: {
+    type: Boolean,
+  },
+  vaccineName: {
+    type: String,
+    required: true,
+  },
+});
+
+const student = mongoose.model("StudentSchema", studentSchema);
+
+export default student;
