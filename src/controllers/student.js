@@ -20,3 +20,14 @@ export const createStudent = async (req, res) => {
     res.status(409).json({ message: error.message });
   }
 };
+
+export const uploadStudents = async (req, res) => {
+  const file = req.file;
+  const newStudent = new StudentData(student);
+  try {
+    await newStudent.save();
+    response.succesResponse(res, 201, newStudent);
+  } catch (error) {
+    res.status(409).json({ message: error.message });
+  }
+};
