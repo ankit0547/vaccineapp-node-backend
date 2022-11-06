@@ -37,3 +37,16 @@ export const editDrive = async (req, res) => {
     res.status(404).json({ message: error.message });
   }
 };
+
+export const deleteDrive = async (req, res) => {
+  // res.send('Router is working');
+  try {
+    console.log(req.query.id);
+    const deleteStudentResp = await VaccineDriveData.findByIdAndDelete(
+      req.query.id
+    );
+    response.succesResponse(res, 200, deleteStudentResp);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
+};

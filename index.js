@@ -8,6 +8,7 @@ import {
   studentRoute,
   landingDetailsRoute,
   vaccineRoute,
+  reportRoute,
 } from "./src/routes/index.js";
 import dotenv from "dotenv";
 
@@ -40,5 +41,6 @@ app.use(cors());
 app.use("/api/v1/student/", studentRoute);
 app.use("/api/v1/vaccineDrive/", vaccineRoute);
 app.use("/api/v1/landing/", landingDetailsRoute);
+app.use("/api/v1/report/", reportRoute);
 
 app.listen(PORT, () => console.log(`server is running at ${PORT} port!!`));
